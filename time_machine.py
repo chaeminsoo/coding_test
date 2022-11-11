@@ -18,8 +18,10 @@ def bf(st):
             from_node = edges[j][0]
             to_node = edges[j][1]
             cost = edges[j][2]
+            # 현재 간선을 거쳐서 다른 노드로 이동하는 거리가 더 짧은 경우
             if dist[from_node] != 1e9 and dist[from_node] + cost < dist[to_node]:
                 dist[to_node] = dist[from_node] + cost
+                # n번째 라운드에도 값이 갱신된다면 음의 순환이 있다
                 if r == n-1:
                     return True
     return False
