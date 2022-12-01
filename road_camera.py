@@ -1,7 +1,6 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/42884?language=python3
 def solution(routes):
     answer = 0
-    num_car = len(routes)
     routes.sort(key = lambda x : x[1])
     camera_spot = -30000
     
