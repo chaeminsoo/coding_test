@@ -23,4 +23,4 @@ else:
         for j in range(n):
             if check[i][j] == 1:
                 ans += roads[i][j]
-    print(ans//2)
+    print(ans//2) # 양방향 도로
