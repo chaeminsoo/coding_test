@@ -8,7 +8,6 @@ def solution(relation):
     for j in range(1,column_num+1):
         combi += list(combinations([i for i in range(column_num)],j))
     
-    print(combi)
     candi = []
     for cb in combi:
         check_set = set()
