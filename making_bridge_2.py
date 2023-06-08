@@ -50,9 +50,7 @@ def make_bridge(x,y,d):
             if board[x][y] != 0 and cnt >= 3:
                 return [s,board[x][y],cnt-1]
         else:
-            break
-
-    return [s,-1,-1]
+            return [s,-1,-1]
 
 def find_parent(parent, x):   # 노드의 부를 찾아주는 함수
     if parent[x] != x:     # 부모가 자기 자신이 아니면 
