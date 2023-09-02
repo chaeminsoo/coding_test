@@ -5,6 +5,7 @@ def solution(gems):
     gem_num = len(set(gems))
     gem_status = 0
     all_gem = 2**gem_num-1
+    
     gem_dict = {j:i for i,j in enumerate(set(gems))}
     gem_how_many = {i:0 for i in gems}
     
